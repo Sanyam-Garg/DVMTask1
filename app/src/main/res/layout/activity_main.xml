@@ -5,7 +5,8 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:orientation="vertical"
-    tools:context=".MainActivity">
+    tools:context=".MainActivity"
+    android:background="@drawable/bg">
 
     <RelativeLayout
         android:layout_width="match_parent"
@@ -15,19 +16,27 @@
             android:id="@+id/text_view_p1"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:text="Player 1: 0"
+            android:text="Player 1: 0 "
+            android:textColor="#FFFFFF"
             android:textSize="30sp"
             android:freezesText="true"
-
+            android:fontFamily="casual"
+            android:textStyle="bold"
+            android:layout_marginLeft="3dp"
             />
         <TextView
             android:id="@+id/text_view_p2"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_below="@+id/text_view_p1"
-            android:text="Player 2: 0"
+            android:layout_marginTop="3dp"
+            android:text="Player 2: 0 "
+            android:textColor="#FFFFFF"
             android:textSize="30sp"
-            android:freezesText="true"/>
+            android:freezesText="true"
+            android:fontFamily="casual"
+            android:textStyle="bold"
+            android:layout_marginLeft="3dp"/>
         <Button
             android:id="@+id/button_reset"
             android:layout_width="wrap_content"
@@ -37,6 +46,26 @@
             android:layout_marginRight="33dp"
 
             android:text="reset" />
+
+        <ImageView
+            android:id="@+id/imageView"
+            android:layout_width="30dp"
+            android:layout_height="30dp"
+            app:srcCompat="@drawable/p1"
+            android:layout_toRightOf="@id/text_view_p2"
+            android:layout_alignParentTop="true"
+            android:layout_marginTop="8dp"
+            android:layout_marginLeft="5dp"/>
+
+        <ImageView
+            android:id="@+id/imageView2"
+            android:layout_width="30dp"
+            android:layout_height="30dp"
+            app:srcCompat="@drawable/p2"
+            android:layout_toRightOf="@id/text_view_p2"
+            android:layout_below="@id/imageView"
+            android:layout_marginLeft="5dp"
+            android:layout_marginTop="8dp"/>
     </RelativeLayout>
     <LinearLayout
         android:layout_width="match_parent"
@@ -50,7 +79,8 @@
             android:textSize="60sp"
             android:freezesText="true"
             android:textStyle="bold"
-            android:backgroundTint="#252522"/>
+            android:backgroundTint="#252522"
+            android:alpha="0.60"/>
         <Button
             android:id="@+id/button_01"
             android:layout_width="0dp"
@@ -59,7 +89,8 @@
             android:textSize="60sp"
             android:freezesText="true"
             android:textStyle="bold"
-            android:backgroundTint="#252522"/>
+            android:backgroundTint="#252522"
+            android:alpha="0.60"/>
         <Button
             android:id="@+id/button_02"
             android:layout_width="0dp"
@@ -68,7 +99,8 @@
             android:textSize="60sp"
             android:freezesText="true"
             android:textStyle="bold"
-            android:backgroundTint="#252522"/>
+            android:backgroundTint="#252522"
+            android:alpha="0.60"/>
     </LinearLayout>
     <LinearLayout
         android:layout_width="match_parent"
@@ -82,7 +114,8 @@
             android:textSize="60sp"
             android:freezesText="true"
             android:textStyle="bold"
-            android:backgroundTint="#252522"/>
+            android:backgroundTint="#252522"
+            android:alpha="0.60"/>
         <Button
             android:id="@+id/button_11"
             android:layout_width="0dp"
@@ -91,7 +124,8 @@
             android:textSize="60sp"
             android:freezesText="true"
             android:textStyle="bold"
-            android:backgroundTint="#252522"/>
+            android:backgroundTint="#252522"
+            android:alpha="0.60"/>
         <Button
             android:id="@+id/button_12"
             android:layout_width="0dp"
@@ -100,7 +134,8 @@
             android:textSize="60sp"
             android:freezesText="true"
             android:textStyle="bold"
-            android:backgroundTint="#252522"/>
+            android:backgroundTint="#252522"
+            android:alpha="0.60"/>
     </LinearLayout>
     <LinearLayout
         android:layout_width="match_parent"
@@ -114,7 +149,8 @@
             android:textSize="60sp"
             android:freezesText="true"
             android:textStyle="bold"
-            android:backgroundTint="#252522"/>
+            android:backgroundTint="#252522"
+            android:alpha="0.60"/>
         <Button
             android:id="@+id/button_21"
             android:layout_width="0dp"
@@ -123,7 +159,8 @@
             android:textSize="60sp"
             android:freezesText="true"
             android:textStyle="bold"
-            android:backgroundTint="#252522"/>
+            android:backgroundTint="#252522"
+            android:alpha="0.60"/>
         <Button
             android:id="@+id/button_22"
             android:layout_width="0dp"
@@ -132,7 +169,8 @@
             android:textSize="60sp"
             android:freezesText="true"
             android:textStyle="bold"
-            android:backgroundTint="#252522"/>
+            android:backgroundTint="#252522"
+            android:alpha="0.60"/>
     </LinearLayout>
 
 </LinearLayout>
